@@ -1,0 +1,128 @@
+print("Key Whitelist Check")
+wait(3)
+print("[Meility Hub BF]: [1/5] Authenticating...")
+wait(3)
+print("[Meility Hub BF]: [2/5] Checking Key")
+
+local keys = {
+    "Meility-MUXuTYWzItlV2xeN",
+    "Meility-TqKLuEMgp3CFePOZ",
+    "Meility-GYTRHD8HUzyugrygh",
+    "Meility-oJwbmt7QxPe8DN5K",
+    "Meility-8C5bkiHaWmrFVSq4",
+    "Meility-OL9wuAdKIaRsF41W",
+    "Meility-f8GFAt6jUWasewIh",
+    "Meility-jowUfYZB3DPzeSNv",
+    "Meility-UslqhkvjELYHxcRM",
+    "Meility-xJ3Tpqv7Rzlt9cFD",
+    "Meility-RrHSjbhZm9e7yLzc",
+    "Meility-fhqcVeGPRapCEmAW",
+    "Meility-xU9fpKs027XLYHrO",
+    "Meility-mbSGeL5PzAIFh792",
+    "Meility-0yrCEzOot61mfTPn",
+    "Meility-B34ST-K53Y-70R-S9UP",
+    "Meility-Lsg2t13fj93jxxz",
+}
+
+wait(3)
+ 
+local counter = 1
+local keyCheck
+for i,v in pairs(keys) do
+    if counter == #keys then
+    -- No Whitelist
+    keys = ""
+    print("[Meility Hub BF]: [] Key Error")
+    wait(3)
+    print("[Meility Hub BF]: [] Key Not Found")
+    else
+        if v == _G.Key then
+            -- whitelist-
+            print("[Meility Hub BF]: [3/5] Success Checking Key")
+            wait(3)
+            print("[Meility Hub BF]: [4/5] IP Script Success")
+            wait(3)
+            print("[Meility Hub BF]: [5/5] Success All Syestem Enjoy")
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/xDeilityHub/Comkak/main/TouarLak'))()
+            keyCheck = _G.Key
+            keys = ""
+        else
+            counter = counter +1
+        end
+    end
+end
+
+while true do
+    if _G.Key == keyCheck then
+        -- Wrong Keys
+    else
+        print("[Meility Hub BF]: You are wrong whitelisted! Please Contact the Developer, IP")
+        wait(2)
+        print("[Meility Hub BF]: Your a Key Has Wrong Please Contact the Developer To Get Your New Keys")
+    end
+    wait()
+end
+
+print("Hwid Whitelist Check")
+
+wait(3)
+
+-- whitelist
+
+print("[Meility Hub BF]: [1/5] Authenticating...")
+
+wait(3)
+
+print("[Meility Hub BF]: [2/5] Checking Hwid")
+
+wait(3)
+
+print("[Meility Hub BF]: [3/5] Hwid Not Found")
+
+local ClientId = game:GetService("RbxAnalyticsService"):GetClientId()
+
+local hwide = {
+    "FCAC0FEE78538744C18D1987CD4BFA7F60",
+    "FCTUGH8R4HFUEHUH45UFH3UFH45YG4UHF4",
+    "c7b3b15efd184c76949244dc2cceffd1",
+}
+
+wait(3)
+ 
+local counter = 1
+local hwideCheck
+for i,v in pairs(hwide) do
+    if counter == #hwide then
+    -- No Hwid
+    hwide = ""
+    print("[Meility Hub BF]: [] Hwid Error")
+    wait(3)
+    print("[Meility Hub BF]: [] Key Not Found")
+    else
+        if v == _G.Hwid then
+            -- whitelist-
+            print("[Meility Hub BF]: [3/5] Success Checking Hwid")
+            wait(3)
+            print("[Meility Hub BF]: [4/5] IP Hwid Success")
+            wait(3)
+            print("[Meility Hub BF]: [5/5] Success All Syestem Enjoy")
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/xDeilityHub/Comkak/main/TouarLak'))()
+            hwideCheck = _G.Hwid
+            hwide = ""
+        else
+            counter = counter +1
+        end
+    end
+end
+
+while true do
+    if _G.Hwid == hwideCheck then
+        -- Wrong Hwid
+    else
+        local hwide = game:GetService("RbxAnalyticsService"):GetClientId()
+        setclipboard(""..tostring(Old))
+        print("[Meility Hub BF]: Copy Hwid Please Contact Developer , Paste")
+    end
+    wait()
+end
+
